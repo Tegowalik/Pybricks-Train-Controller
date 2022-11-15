@@ -38,7 +38,6 @@ class TrainController:
         if color == 'random':
             color = choice([Color.YELLOW, Color.GREEN, Color.CYAN, Color.BLUE, Color.RED])
         self.hub = CityHub()
-        self.hub.system.set_stop_button(None)
         self.remote = TrainRemote(mode, color=color)     
         self.hub.light.on(color)      
         self.motors = []
@@ -81,8 +80,6 @@ class TrainController:
             buttons = self.remote.pressed()
 
             if len(buttons) > 0:
-                if Button.CENTER in buttons:
-                    break
                 if self.remote.mode in [RemoteMode.LEFT, RemoteMode.LEFT_ADVANCED]:
                     if Button.LEFT in buttons:
                         self.power = 0
