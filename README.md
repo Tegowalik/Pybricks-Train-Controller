@@ -1,7 +1,5 @@
 # Pybricks-Train-Controller
 
-** This is still work in progress (but it should already work) **
-
 Short instruction: 
 - Go to https://code.pybricks.com/
 - Open the TrainController.py file or just copy and paste the content of the file into the pybricks console
