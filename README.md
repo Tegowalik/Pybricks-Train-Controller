@@ -4,9 +4,10 @@ Implementation of a controller for LEGO City Trains using [PyBricks](https://cod
 
 Short instruction: 
 - Go to [https://code.pybricks.com/](https://code.pybricks.com/)
-- Open the TrainController.py file or just copy and paste the content of the file into the pybricks console
-- Flash your CityHub with the Pybricks Software. If you just want to run the code (without changing it) you can enable "settings -> Firmware -> Include current program", so the CityHub will be a TrainController until another firmware reflash will be done.
-- If you flashed your hub including the program, just start the hub, start the program by clicking again the green button of the hub (the hub starts searching for a controller), start your controller (eventually press the controller's green button), and the two devices should pair (indicated by the same color of hub and controller). Otherwise, connect the flashed hub via bluetooth and Run the program (Connect via bluetooth and Run are both buttons inside the pybricks IDE). After running the code connect the controller as described above.
+- - Connect your hub to Pybricks. If your hub is not flashed yet with the Pybricks firmware, you need to flash the hub first (just follow the Pybricks instructions)
+- Upload the TrainController.py file or just copy and paste the content of the file into a new python file.
+- Flash your CityHub with the Pybricks Software.
+- To run the program, just start the hub, start the program by clicking again the green button of the hub (the hub starts searching for a controller), start your controller (eventually press the controller's green button), and the two devices should pair (indicated by the same color of hub and controller). Otherwise, connect the flashed hub via bluetooth and Run the program (Connect via bluetooth and Run are both buttons inside the pybricks IDE). After running the code connect the controller as described above.
 
 The program provides a pretty flexible way how a train can be controlled using a CityHub and a controller. By using the provided code TrainController.py, the following configuration is applied:
 - The left side of the controller modifies the speed in a classical way ("+" -> increase speed, "-" decrease speed, red button -> stop)
